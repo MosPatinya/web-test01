@@ -1,0 +1,8 @@
+version: '2.0'
+services: 
+    web:
+        image: web-server:v1
+        container_name: wrk-nginx
+        restart: always
+        ports: 
+        - "9001:80"
